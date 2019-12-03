@@ -73,7 +73,7 @@ class ConsultantController extends Controller
     {
         $consultant -> update($request ->all());
 
-        $request response() -> json($consultant, 200);
+        return esponse() -> json($consultant, 200);
     }
 
     /**
