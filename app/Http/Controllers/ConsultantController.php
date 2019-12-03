@@ -48,6 +48,7 @@ class ConsultantController extends Controller
      */
     public function show(Consultant $consultant)
     {
+
         return $consultant;
     }
 
@@ -73,7 +74,7 @@ class ConsultantController extends Controller
     {
         $consultant -> update($request ->all());
 
-        return esponse() -> json($consultant, 200);
+        return response() -> json($consultant, 200);
     }
 
     /**
